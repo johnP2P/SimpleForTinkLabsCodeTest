@@ -58,7 +58,6 @@ public class ItemListFragment extends BaseMvpFragment<ItemListFragmentPresenter>
     @Override
     public void resetStatus() {
         mRefreshRecyclerView.dismissSwipeRefresh();
-        //mRefreshRecyclerView.getRecyclerView().scrollToPosition(0);
     }
 
     @Override
