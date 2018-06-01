@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SimpleForTinkLabsCodeTest</string>
+
+    <!--下拉刷新-->
+    <string name="listview_status_last">到底了</string>
+
+</resources>

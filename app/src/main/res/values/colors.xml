@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#284ee6</color>
+
+    <color name="white">#ffffff</color>
+    <!--警告文字主要颜色-->
+    <color name="color_common_error_txt">#FF6666</color>
+
+    <!-- 标题文字主要颜色-->
+    <color name="color_common_main_txt">#FF000000</color>
+    <!-- 内容文字主要颜色-->
+    <color name="color_common_content_txt">#FF747474</color>
+
+    <color name="color_divider">#FFDDDDDD</color>
+
+    <!--SwipeRefresh Color-->
+    <color name="color_swipe_refesh_color1">#FF437845</color>
+    <color name="color_swipe_refesh_color2">#fff5c423</color>
+    <color name="color_swipe_refesh_color3">#FF2FAC21</color>
+    <color name="color_divider_role">#e7e7e7</color>
+</resources>
