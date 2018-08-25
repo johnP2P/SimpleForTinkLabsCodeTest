@@ -1,5 +1,7 @@
 package com.hqm.simplefortinklabscodetest;
 
+import android.content.SharedPreferences;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
