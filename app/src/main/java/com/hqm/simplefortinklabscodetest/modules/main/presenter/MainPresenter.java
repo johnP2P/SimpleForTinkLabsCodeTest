@@ -1,8 +1,11 @@
 package com.hqm.simplefortinklabscodetest.modules.main.presenter;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.util.Log;
 
 import com.hqm.simplefortinklabscodetest.base.RxPresenter;
 import com.hqm.simplefortinklabscodetest.common.Constants;
@@ -11,7 +14,9 @@ import com.hqm.simplefortinklabscodetest.modules.main.fragment.ItemListFragment;
 import com.hqm.simplefortinklabscodetest.views.adapter.CommonFragmentAdapter;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class MainPresenter extends RxPresenter<MainContract.View> implements MainContract.Presenter {
@@ -35,6 +40,20 @@ public class MainPresenter extends RxPresenter<MainContract.View> implements Mai
         titles.add("SHOP");
         titles.add("EAT");
         mTabAdapter = new CommonFragmentAdapter(fragmentManager, getFragments(), titles);
+        SharedPreferences sharedPreferences = mActivity.getSharedPreferences("test_sp", Context.MODE_PRIVATE);
+        sharedPreferences.edit().putInt("settings", 2).commit();
+        sharedPreferences.edit().clear();
+        sharedPreferences.edit().commit();
+        Log.e("test", "sp value:" + sharedPreferences.getInt("settings", 0));
+
+    }
+
+    synchronized void find(){
+        try {
+            wait();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     private List<Fragment> getFragments() {
