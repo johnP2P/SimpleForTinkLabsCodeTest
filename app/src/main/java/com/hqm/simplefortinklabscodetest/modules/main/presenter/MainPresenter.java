@@ -28,6 +28,7 @@ public class MainPresenter extends RxPresenter<MainContract.View> implements Mai
     }
 
     private int master = 1;
+    private int dev; //dev
 
     @Override
     public CommonFragmentAdapter getTabAdapter() {
